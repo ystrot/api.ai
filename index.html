@@ -82,8 +82,8 @@
 				success: function(data) {
 					setResponse(JSON.stringify(data, undefined, 2));
 				},
-				failure: function(errMsg) {
-					setResponse("Error: " + errMsg);
+				error: function() {
+					setResponse("Internal Server Error");
 				}
 			});
 			setResponse("Loading...");
